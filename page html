@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine Programme Tennis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue ! Veuillez vous authentifier.</h1>
+    </header>
+
+    <div class="container">
+        <!-- Menu latéral -->
+        <aside class="sidebar">
+            <button onclick="showPanel('personalData')">Données Personnelles</button>
+            <button onclick="showPanel('morphologicalData')">Données Morphologiques</button>
+            <button onclick="showPanel('strengths')">Points Forts & À Améliorer</button>
+            <button onclick="showPanel('trainingPhases')">Phases d'Entraînement</button>
+            <button onclick="showPanel('biometricData')">Données Biométriques</button>
+            <button onclick="showPanel('squelette3D')">Squelette 3D</button>
+        </aside>
+
+        <!-- Contenu principal -->
+        <main class="content">
+            <section id="personalData" class="panel active">Bienvenue dans vos données personnelles.</section>
+            <section id="morphologicalData" class="panel">Informations morphologiques ici.</section>
+            <section id="strengths" class="panel">Voici vos points forts et vos points à améliorer.</section>
+            <section id="trainingPhases" class="panel">Phases d'entraînement ici.</section>
+            <section id="biometricData" class="panel">Données biométriques ici.</section>
+            <section id="squelette3D" class="panel">Squelette 3D ici.</section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
